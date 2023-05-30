@@ -63,8 +63,21 @@ function reverseString(str) {
 
 console.log(reverseString('hello world'));
 
-//8. Returns an array of strings longer than the strings in the array
-const stringsLongerThan = function(strings, num) {
+//8. Retuns the longest string in an array of strings
+const longestStringInArray = function(strings) {
+    let len = 0;
+    strings.forEach(str => {
+        if (str.length > len) {
+            len = str.length;
+        }
+    });
+    return len;
+}
+
+console.log(longestStringInArray(["gub", "hello guy", "world", "and", "me"]));
+
+//9. Returns an array of strings longer than the strings in the array
+function stringsLongerThan(strings, num) {
     let longerStrings = [];
     strings.forEach(str => {
         if(str.length > num) {

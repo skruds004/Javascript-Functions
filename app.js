@@ -63,7 +63,7 @@ function reverseString(str) {
 
 console.log(reverseString('hello world'));
 
-//8. Retuns the longest string in an array of strings
+//8. Returns the longest string in an array of strings
 const longestStringInArray = function(strings) {
     let len = 0;
     strings.forEach(str => {

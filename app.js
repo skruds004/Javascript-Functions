@@ -7,7 +7,7 @@ function maxOfTwoNumbers(x ,y) {
 console.log(maxOfTwoNumbers(10, 20));
 
 // 2. Function that returns the maximum of three numbers
-function maxOfThreeNumbers(x,y,z) {
+const maxOfThreeNumbers = function(x,y,z) {
     let numArray = [x,y,z];
     numArray.sort((a,b) => a - b);
     return numArray[2];
@@ -28,7 +28,7 @@ function isCharAVowel(char) {
 console.log(isCharAVowel('A'));
 
 //4. Function that returns the sum of an array
-function sumOfArray(arr) {
+const sumOfArray = function(arr) {
     let sum = 0;
     arr.forEach(num => {
         sum += num;
@@ -50,7 +50,7 @@ function productOfArray(arr) {
 console.log(productOfArray([-1,3,5]));
 
 //6. Function that returns the number of arguments
-function numArgs(...args) {
+const numArgs = function(...args) {
     return args.length;
 }
 
@@ -62,3 +62,16 @@ function reverseString(str) {
 }
 
 console.log(reverseString('hello world'));
+
+//8. Returns an array of strings longer than the strings in the array
+const stringsLongerThan = function(strings, num) {
+    let longerStrings = [];
+    strings.forEach(str => {
+        if(str.length > num) {
+            longerStrings.push(str);
+        }
+    });
+    return longerStrings;
+}
+
+console.log(stringsLongerThan(["gub", "hello", "world", "and", "me"], 3));

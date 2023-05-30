@@ -14,3 +14,14 @@ function maxOfThreeNumbers(x,y,z) {
 }
 
 console.log(maxOfThreeNumbers(123123, 40, 30));
+
+function isCharAVowel(char) {
+    //y is a fencesitter 
+    char = char.toLowerCase();
+    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+        return true;
+    }
+    return false;
+}
+
+console.log(isCharAVowel('A'));

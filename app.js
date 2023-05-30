@@ -15,6 +15,7 @@ function maxOfThreeNumbers(x,y,z) {
 
 console.log(maxOfThreeNumbers(123123, 40, 30));
 
+// 3. Function that checks if a character is a vowel
 function isCharAVowel(char) {
     //y is a fencesitter 
     char = char.toLowerCase();
@@ -25,3 +26,32 @@ function isCharAVowel(char) {
 }
 
 console.log(isCharAVowel('A'));
+
+//4. Function that returns the sum of an array
+function sumOfArray(arr) {
+    let sum = 0;
+    arr.forEach(num => {
+        sum += num;
+    });
+    return sum;
+}
+
+console.log(sumOfArray([-1,2.2,3,4,5]));
+
+//5. Function that returns the product of an array
+function productOfArray(arr) {
+    let product = 1;
+    arr.forEach(num => {
+        product *= num;
+    });
+    return product;
+}
+
+console.log(productOfArray([-1,3,5]));
+
+//6. Function that returns the number of arguments
+function numArgs(...args) {
+    return args.length;
+}
+
+console.log(numArgs(1,2,5,6,7,8,9,10));

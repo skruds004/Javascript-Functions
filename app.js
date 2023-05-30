@@ -88,3 +88,14 @@ function stringsLongerThan(strings, num) {
 }
 
 console.log(stringsLongerThan(["gub", "hello", "world", "and", "me"], 3));
+
+//10. sums any quantity of numbers
+const addList = function(...nums) {
+    let sum = 0;
+    nums.forEach(num => {
+        sum += num;
+    });
+    return sum;
+}
+
+console.log(addList(-10,2,3.141592,4,5,6,7));
